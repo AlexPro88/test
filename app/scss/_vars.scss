@@ -1,0 +1,20 @@
+$accent: #EF483E;
+$bg: #343539;
+$ph :#CFCFCF;
+%helveticaneue-700 {
+    font-family: HelveticaNeueCyr-Bold, sans-serif;
+    font-weight: 700;
+}
+
+%helveticaneue-400 {
+    font-family: HelveticaNeueCyr-Roman, sans-serif;
+    font-weight: 400;
+}
+
+%checkbox-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}

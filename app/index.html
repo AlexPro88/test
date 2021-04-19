@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <section class="filter">
+        <h3 class="filter__title">
+            FTL: Прямая машина
+        </h3>
+        <form action="#" class="box__form">
+            <div class="filter__box">
+                <h5 class="filter__title-fields">
+                    Маршрут
+                </h5>
+                <label class="filter__input-box">
+                    <span class="filter__input-name">
+                        Откуда
+                    </span>
+                    <input class="filter__input filter__input" type="text">
+                </label>
+                <label class="filter__input-box">
+                    <span class="filter__input-name">
+                        Куда
+                    </span>
+                    <input class="filter__input filter__input" type="text">
+                </label>
+            </div>
+            <div class="filter__box">
+                <h5 class="filter__title-fields">
+                    Транспорт
+                </h5>
+                <div class="filter__select-box">
+                    <label class="filter__input-box">
+                        <span class="filter__input-name">
+                            Грузоподъемность
+                        </span>
+                        <div class="filter__select-wrapper">
+                            <select class="filter__select filter__input">
+                                <option value="">Не выбрана</option>
+                                <option value="1">Вариант 2</option>
+                                <option value="2">Вариант 3</option>
+                                <option value="3">Вариант 4</option>
+                            </select>
+                        </div>
+                    </label>
+                    <label class="filter__input-box">
+                        <span class="filter__input-name">
+                            Способ погрузки
+                        </span>
+                         <div class="filter__select-wrapper">
+                            <select class="filter__select filter__input loading">
+                                <option value="1">Задняя</option>
+                                <option value="2">Вариант 2</option>
+                                <option value="3">Вариант 3</option>
+                                <option value="4">Вариант 4</option>
+                            </select>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="filter__box">
+                <h5 class="filter__title-fields">
+                    Груз
+                </h5>
+                <div class="filter__select-box">
+                    <label class="filter__input-box">
+                        <span class="filter__input-name">
+                            Тип груза
+                        </span>
+                        <div class="filter__select-wrapper">
+                            <select class="filter__select filter__input">
+                                <option value="" >Не выбрана</option>
+                                <option value="1">Вариант 1</option>
+                                <option value="2">Вариант 2</option>
+                                <option value="3">Вариант 3</option>
+                                <option value="4">Вариант 4</option>
+                            </select>
+                        </div>
+                    </label>
+                    <label class="filter__input-box">
+                        <span class="filter__input-name">
+                            Объявленная ценность, &#8381;
+                        </span>
+                      <input class="filter__input" type="number" placeholder="≥ 1" min=1>
+                    </label>
+                </div>
+                <label class="filter__temperature">
+                  <input class="filter__temp-check" type="checkbox" >
+                    <span class="filter__checkbox">
+                        <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5L9.49168 0L11 1.45455L4 8L0 3.93761L1.50832 2.48306L4 5Z" fill="white"/>
+                        </svg>
+                    </span>
+                    <span class="filter__input-name">
+                      Требуется температурный режим
+                    </span>
+                </label>
+                <div class="filter__select-box">
+                    <label class="filter__input-box">
+                        <span class="filter__input-name">
+                            От, &#8451;
+                        </span>
+                        <input class="filter__input" type="text" value="-20">
+                    </label>
+                    <label class="filter__input-box">
+                        <span class="filter__input-name">
+                            До, &#8451;
+                        </span>
+                        <input class="filter__input" type="text" value="+23">
+                    </label>
+                </div>
+            </div>
+            <div class="filter__box">
+                <h5 class="filter__title-fields">
+                    Время
+                </h5>
+                <div class="filter__input-name filter__time-text">
+                    <span class="filter__time-from">
+                      Когда прибыть на точку
+                    </span>
+                    <span class="filter__time-way">
+                      700 км в день
+                    </span>
+                </div>
+                <label class="filter__radio">
+                    <input class="filter__point-radio" type="radio" name="adress" >
+                        <span class="filter__point-name">
+                          Длинный адрес с градиентом
+                        </span>
+                    <button  class="filter__radio-btn">НЕ ВЫБРАНО</button>
+                </label>
+                <label class="filter__radio">
+                    <input class="filter__point-radio" type="radio" name="adress" checked>
+                    <span class="filter__point-name">
+                            Адрес не указан
+                        </span>
+                    <button class="filter__radio-btn">НЕ ВЫБРАНО</button>
+                </label>
+                <div class="filter__input-name comment">
+                    Комментарий к заказу
+                </div>
+                <textarea class="filter__comments " placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"></textarea>
+                <div class="filter__help">
+                    Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.
+                </div>
+            </div>
+        </form>
+    </section>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
