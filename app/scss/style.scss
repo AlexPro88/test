@@ -3,6 +3,7 @@
 @import '_reset';
 .filter {
     background-color: $bg;
+    color: #fff;
     @extend %helveticaneue-400;
     &__title-fields {
         @extend %helveticaneue-700;
@@ -20,7 +21,6 @@
 
 @media(max-width: 768px) {
     .filter {
-        color: #fdf;
         counter-reset: subtitle;
         &__box {
             padding: 0 16px 40px 16px;
